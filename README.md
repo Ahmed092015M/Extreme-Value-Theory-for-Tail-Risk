@@ -64,11 +64,10 @@ evt-tail-risk/
 conda create -n quant python=3.12
 conda activate quant
 pip install -r requirements.txt
-pytest -q                                 # 32 tests
-jupyter lab notebooks/01_tail_risk.ipynb  # run top to bottom
+pytest -q                                
+jupyter lab notebooks/01_tail_risk.ipynb 
 ```
 
-The first run downloads the data and computes the out-of-sample engine (about 4 minutes), the bootstrap and the coverage simulation; results are saved in `data/processed` and reloaded afterwards.
 
 ## Limitations
 
